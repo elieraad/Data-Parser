@@ -5,5 +5,5 @@
   <li><a href="mailto:elie.raad01@lau.edu">Email</a></li>
 </ul>
 
-# Data-Parser
+# Data Parser
 Extract draw results from La Libanaise Des Jeux web URL and compute their occurrence.
