@@ -18,6 +18,7 @@ public class ParsingData {
     URL url = new URL("https://www.lldj.com/en/LatestResults/Loto?draw=" + drawNum);
     InputStream is = url.openStream();
     BufferedReader br = new BufferedReader(new InputStreamReader(is));
+    br.skip(27000);
     String line;
 
     while ((line = br.readLine()) != null) {
@@ -27,6 +28,7 @@ public class ParsingData {
      } else if (line.startsWith("                <li class=\"ball big extraball ball-")) {
       line = line.substring(line.indexOf("-") + 1, line.indexOf("\">"));
       sb.append(line + "\n");
+      break;
      }
     }
     System.out.println("Retrived data from draw #" + drawNum);
