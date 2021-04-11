@@ -1,0 +1,8 @@
+<div *ngFor="let row of bingoService.bingo;let i=index">
+    <div class="holder">
+        <div *ngFor="let cell of row;let j=index">
+            <div [ngClass]="{'cover-cell': bingoService.covers[i][j]}"
+            class="cell">{{cell}}</div>
+        </div>
+    </div>
+</div>

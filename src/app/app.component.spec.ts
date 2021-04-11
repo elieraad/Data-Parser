@@ -19,7 +19,6 @@ describe('AppComponent', () => {
   it(`should have as title 'data-parser'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('data-parser');
   });
 
   it('should render title', () => {
